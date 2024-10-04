@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>messageList</title>
+<script th:src="@{/js/utils.js}"></script>
+</head>
+<body>
+<h1>Message List</h1>
+<div id="loading_id" class="loading">Loading...</div>
+<div id="error_id" class="error">fetching 과정에서 오류 발생.</div>
+<ul id="messageList_id"></ul>
+
+<!-- messageList api -->
+<script th:src="@{/js/fetch-message.js}"></script>
+</body>
+</html>

@@ -4,4 +4,7 @@
 	<select id="getMessageById" resultType="com.ys.project1.ex.sbb.candy.Message">
 		SELECT * FROM hello WHERE id = #{id}
 	</select>
+	<select id="getMessageList" resultType="com.ys.project1.ex.sbb.candy.Message">
+		SELECT * FROM hello ORDER BY id DESC LIMIT 20;
+	</select>
 </mapper>
