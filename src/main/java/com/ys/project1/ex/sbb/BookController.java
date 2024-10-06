@@ -31,7 +31,7 @@ public class BookController {
 	
 	@GetMapping("/insert")
 	public String insertInfo() {
-		return "info";
+		return "book-info";
 	}
 	
 	@PostMapping
