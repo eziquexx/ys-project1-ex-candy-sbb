@@ -7,4 +7,6 @@ import com.ys.project1.ex.sbb.DTO.BookDTO;
 @Mapper
 public interface BookMapper {
 	BookDTO getBook(int id);
+	
+	void insertInfo(BookDTO data);
 }

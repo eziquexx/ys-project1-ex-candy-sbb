@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Info</title>
+</head>
+<body>
+	<h1>책 정보를 입력해주세요 ^^</h1>
+	<form id="infoForm" method="post" th:action="@{/book-list}">
+		<label for="bookName">책 이름: </label>
+		<input type="text" id="bookName" name="name" required />
+		<label for="bookAuthor">책 저자: </label>
+		<input type="text" id="bookAuthor" name="author" />
+		<button type="submit">정보 입력</button>
+	</form>
+	
+	<script th:inline="javascript">
+		const contextPath = /*[[@{/}]]*/'';
+	</script> 
+
+	<script th:src="@{/js/fetch-info.js}"></script>
+</body>
+</html>

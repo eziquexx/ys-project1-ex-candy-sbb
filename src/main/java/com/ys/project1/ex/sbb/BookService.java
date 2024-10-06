@@ -13,4 +13,8 @@ public class BookService {
 	public BookDTO getBook(int id) {
 		return mapper.getBook(id);
 	}
+	
+	public void insertInfo(BookDTO data) {
+		mapper.insertInfo(data);
+	}
 }
