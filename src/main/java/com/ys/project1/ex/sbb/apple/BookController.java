@@ -1,4 +1,4 @@
-package com.ys.project1.ex.sbb;
+package com.ys.project1.ex.sbb.apple;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.ys.project1.ex.sbb.DTO.BookDTO;
+import com.ys.project1.ex.sbb.apple.DTO.BookDTO;
 
 @Controller
 @RequestMapping("/book-list")

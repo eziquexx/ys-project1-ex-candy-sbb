@@ -1,4 +1,4 @@
-package com.ys.project1.ex.sbb.DTO;
+package com.ys.project1.ex.sbb.apple.DTO;
 
 public class BookDTO {
 	private int id;
