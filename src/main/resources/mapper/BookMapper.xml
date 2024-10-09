@@ -4,7 +4,7 @@
 	<select id="getBook" resultType="com.ys.project1.ex.sbb.DTO.BookDTO">
 		SELECT * FROM book WHERE id = #{id} 
 	</select>
-	<insert id="insertInfo" parameterMap="com.ys.project1.ex.sbb.DTO.BookDTO">
+	<insert id="insertInfo" parameterType="com.ys.project1.ex.sbb.DTO.BookDTO">
 		INSERT INTO book (name, author) values (#{name}, #{author})
 	</insert>
 </mapper>
